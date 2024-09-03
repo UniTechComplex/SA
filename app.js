@@ -53,7 +53,7 @@ function showSlider(type){
 /* Send the action to the request page*/
 let home = document.querySelector('#home') ;
 home.addEventListener('click',()=>{
-        window.location.href = '/index.html';
+        window.location.href = 'https://unitechcomplex.github.io/SA/index.html';
   
 })
 let about = document.querySelector('.about') ;
@@ -81,7 +81,7 @@ const countdownInterval = setInterval(() => {
     // When the countdown reaches zero, open the file and clear the interval
     if (countdownTime < 0) {
         clearInterval(countdownInterval);
-        window.location.href = '/'+a+'.html'; // Replace with the path to your file
+        window.location.href = 'https://unitechcomplex.github.io/SA/'+a+'.html'; // Replace with the path to your file
     }
 }, 1000);
 
