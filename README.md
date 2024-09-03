@@ -1,0 +1,1 @@
+Sincere Academy web page.
