@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    background-color: #fff;
+    color: #0C0C0C;
+    font-family: Poppins;
+    font-size: 12px;
+    
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    z-index:100;
+    display:flex;
+    justify-content: space-around ;
+    align-items: center;
+    background: transparent;
+    margin-top:0px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    background: #006AFF;
+    color: #fff;
+
+    
+}
+header  h1{
+      z-index:100;
+      
+}
+.head:active {
+font-size:20px;
+
+
+}
+
+   .d1 h1{
+      text-align: center;
+      margin-top:68px;
+      padding:10px;
+    }
+    
+   .d1 h3{
+     display: flex;
+     align-items: center ;
+     justify-content: center ;
+    text-align: center;
+    gap:5px;
+    font-size:1.5em;
+    font-weight:300;
+   }
+  </style>
+</head>
+<body>
+     <header>
+
+    <h1 id="home" class="head">Home</h1>
+    <h1 id="contact" class="head">Contact</h1>
+    <h1 id="about" class="head">About</h1>
+    
+  </header>
+
+<div class="d1">  <h1>About page</h1>
+<h3>
+  This website was made by U.T.C Corporation Ltd.  UTC Corporation Ltd is a tech facility-providing company. It is a reputed company. It provides a simple and user-friendly Website & Tech-facility. Thank you for exploring our product.
+</h3>
+</div>
+
+<script>
+  let home = document.querySelector('#home');
+home.addEventListener('click', () => {
+  open('index');
+})
+
+let contact = document.querySelector('#contact');
+contact.addEventListener('click', () => {
+  open('contact');
+})
+
+let about = document.querySelector('#about') ;
+about.addEventListener('click',()=>{
+  open('about');
+})
+
+
+
+function open (a){
+    // Set the countdown time in seconds
+let countdownTime = 1;
+   console.log(a)
+
+
+// Update the countdown every second
+const countdownInterval = setInterval(() => {
+    countdownTime--;
+
+    // When the countdown reaches zero, open the file and clear the interval
+    if (countdownTime < 0) {
+        clearInterval(countdownInterval);
+        window.location.href = '/Experiment/E2/'+a+'.html'; // Replace with the path to your file
+    }
+}, 1000);
+
+
+};
+
+</script>
+</body>
+</html>
