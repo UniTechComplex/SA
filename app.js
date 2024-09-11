@@ -76,10 +76,10 @@ let countdownTime = 1;
 
 // Update the countdown every second
 const countdownInterval = setInterval(() => {
-    countdownTime--;
+    
 
     // When the countdown reaches zero, open the file and clear the interval
-    if (countdownTime < 0) {
+    if (countdownTime ==1) {
         clearInterval(countdownInterval);
         window.location.href = 'https://unitechcomplex.github.io/SA/'+a+'.html'; // Replace with the path to your file
     }
