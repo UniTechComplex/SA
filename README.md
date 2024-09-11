@@ -1,1 +1,1 @@
-Sincere Academy web page.
+Science Academy web page.
