@@ -54,17 +54,17 @@ function showSlider(type){
 
 let home = document.querySelector('#home') ;
 home.addEventListener('click',()=>{
-window.location.href = '/index.html';        window.location.href = '/index.html';
+ window.location.href = '/index.html';
   
 })
 let about = document.querySelector('.about') ;
 about.addEventListener('click',()=>{
-  window.location.href = '/index.html';        window.location.href = '/about.html';
+  window.location.href = '/about.html';
 })
 
 let contact = document.querySelector('.contact') ;
 contact.addEventListener('click',()=>{
- window.location.href = '/index.html';        window.location.href = '/contact.html';
+   window.location.href = '/contact.html';
 })
 
 
