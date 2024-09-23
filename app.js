@@ -54,17 +54,17 @@ function showSlider(type){
 
 let home = document.querySelector('#home') ;
 home.addEventListener('click',()=>{
- window.location.href = 'https://unitechcomplex.github.io/SA/index.html';
+ window.location.href = 'scinceacademy.pages.dev';
   
 })
 let about = document.querySelector('.about') ;
 about.addEventListener('click',()=>{
-  window.location.href = 'https://unitechcomplex.github.io/SA/about.html';
+  window.location.href = './about.html';
 })
 
 let contact = document.querySelector('.contact') ;
 contact.addEventListener('click',()=>{
-   window.location.href = 'https://unitechcomplex.github.io/SA/contact.html';
+   window.location.href = './contact.html';
 })
 
 
